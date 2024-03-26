@@ -2,7 +2,7 @@
 # - Реализовать рекурсивную функцию для проверки, является ли строка
 # палиндромом.
 
-def lab_three_palindromic(string = ""):
+def lab_three_palindromic(string=""):
     if len(string) <= 1:
         return True
     if string[0] == string[-1]:
@@ -10,7 +10,6 @@ def lab_three_palindromic(string = ""):
     else:
         return False
 
+
 a = input()
 print(lab_three_palindromic(a))
-
-
