@@ -24,3 +24,20 @@ for tableRow in currencies:
         pass
 
 
+responseApi = get("https://api.openweathermap.org/data/2.5/weather?q=Almaty,kz&appid=ae6ec9f4ddc82a04dbf98477ba7dc0ac")
+
+if responseApi.status_code == 200:
+    res = responseApi.json()
+    weather = res['weather'][0]
+    main = res['main']
+    print("\n\n")
+    print(f"{weather['main']} - {weather['icon']};")
+    print("Температура")
+    print(f"ощущение({main['feels_like'] - 273.15})")
+    print(f"прибор({main['temp'] - 273.15})")
+    print(f"минимальное({main['temp_min'] - 273.15})")
+    print(f"максимальное({main['temp_max'] - 273.15})")
+    print(f"видимость({res['visibility']})")
+    print(res)
+else:
+    print(responseApi.status_code)
