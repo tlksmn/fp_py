@@ -11,5 +11,5 @@ def lab_two_high_order_function_fabric(x):
     return fabric_function
 
 
-# print(lab_two_high_order_function_fabric(5)(3));
+print(lab_two_high_order_function_fabric(5)(3));
 
