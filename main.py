@@ -6,9 +6,9 @@
 
 def lab_two_high_order_function_fabric(x):
     def fabric_function(y):
-        return x ** y;
+        return x ** y
 
-    return fabric_function;
+    return fabric_function
 
 
 # print(lab_two_high_order_function_fabric(5)(3));
