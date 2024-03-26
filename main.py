@@ -20,7 +20,7 @@ while True:
     if x == "exit":
         sub1.dispose()
         print(Back.BLUE, Fore.BLACK, "Выход и отписка", Back.RESET, Fore.RESET)
-        break;
+        break
     eventSource.on_next(x)
 
 print("Hello real procedure world!")
