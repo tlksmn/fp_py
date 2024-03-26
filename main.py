@@ -3,7 +3,7 @@
 # ответ на пользовательские события.
 import rx.operators
 from rx.subject import BehaviorSubject
-from colorama import init, Fore, Back, Style
+from colorama import init, Fore, Back
 
 init()
 eventSource = BehaviorSubject("+")
